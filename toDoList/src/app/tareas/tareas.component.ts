@@ -11,7 +11,9 @@ export class TareasComponent implements OnInit {
 
   tareaSeleccionada: number = -1;
 
-
+  setTask(index:number){
+    this.tareaSeleccionada = index;
+  }
 
   addTask() {
     let task = (<HTMLInputElement>document.querySelector(".toDoInput")).value

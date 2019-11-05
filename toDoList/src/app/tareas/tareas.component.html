@@ -1,28 +1,25 @@
-<div class="banner bg-light toDoBanner">
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-            </div>
-            <div class="col-6">
-                <h1 class="toDoTitle text-center mt-5">To Do App</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-10 inputCol">
-                            <input type="text" class="form-control toDoInput" placeholder="Add your To Do">
-                        </div>
-                        <div class="col-4 buttonCol">
-                            <button (click)="addTask()" type="button" class="btn btn addButton"><i
-                                    class="fas fa-plus buttonIcon"></i></button>
-                        </div>
+<div class="container bg-light toDoBanner">
+    <div class="row">
+        <div class="col-12 mb-5">
+            <h1 class="toDoTitle text-center mt-5 mb-5">To Do App</h1>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-10 inputCol">
+                        <input type="text" class="form-control toDoInput" placeholder="Add your To Do">
+                    </div>
+                    <div class="col-4 buttonCol">
+                        <button (click)="addTask()" type="button" class="btn btn addButton"><i
+                                class="fas fa-plus buttonIcon"></i></button>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div *ngFor="let tarea of tareas; let i = index" class="col-12 toDoElementCol">
-                            <div class="toDoElement">
-                                <span class="toDoElementText">{{tarea}}</span>
-                                <i (click)="this.tareaSeleccionada = i" class="fas fa-trash float-right deleteIcon" data-toggle="modal" data-target="#deleteModal"></i>
-                            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div *ngFor="let tarea of tareas; let i = index" class="col-12 toDoElementCol">
+                        <div class="toDoElement mb-2">
+                            <span class="toDoElementText">{{tarea}}</span>
+                            <i (click)="setTask(i)" class="fas fa-trash float-right deleteIcon"
+                                data-toggle="modal" data-target="#deleteModal"></i>
                         </div>
                     </div>
                 </div>
@@ -30,6 +27,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -47,7 +45,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button (click)="deleteTask()" type="button" class="btn btn confirmButton" data-dismiss="modal">Yes</button>
+                <button (click)="deleteTask()" type="button" class="btn btn confirmButton"
+                    data-dismiss="modal">Yes</button>
             </div>
         </div>
     </div>
