@@ -39,7 +39,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>tareas works!</p>\n");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"banner bg-light toDoBanner\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-3\">\r\n            </div>\r\n            <div class=\"col-6\">\r\n                <h1 class=\"toDoTitle text-center mt-5\">To Do App</h1>\r\n                <div class=\"container\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-10 inputCol\">\r\n                            <input type=\"text\" class=\"form-control toDoInput\" placeholder=\"Add your To Do\">\r\n                        </div>\r\n                        <div class=\"col-4 buttonCol\">\r\n                            <button (click)=\"addTask()\" type=\"button\" class=\"btn btn addButton\"><i\r\n                                    class=\"fas fa-plus buttonIcon\"></i></button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"container\">\r\n                    <div class=\"row\">\r\n                        <div *ngFor=\"let tarea of tareas; let i = index\" class=\"col-12 toDoElementCol\">\r\n                            <div class=\"toDoElement\">\r\n                                <span class=\"toDoElementText\">{{tarea}}</span>\r\n                                <i (click)=\"this.tareaSeleccionada = i\" class=\"fas fa-trash float-right deleteIcon\" data-toggle=\"modal\" data-target=\"#deleteModal\"></i>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- Modal -->\r\n<div class=\"modal fade\" id=\"deleteModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <h5 class=\"modal-title\" id=\"exampleModalLabel\">Delete</h5>\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <span>Are you sure?</span>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\r\n                <button (click)=\"deleteTask()\" type=\"button\" class=\"btn btn confirmButton\" data-dismiss=\"modal\">Yes</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -421,7 +421,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RhcmVhcy90YXJlYXMuY29tcG9uZW50LmNzcyJ9 */");
+            /* harmony default export */ __webpack_exports__["default"] = (".toDoBanner{\r\n    height: 100vh;\r\n}\r\n.toDoTitle{\r\n    color: orange;\r\n    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n    margin-bottom: 8%\r\n}\r\n.inputCol{\r\n    display: contents;\r\n}\r\n.toDoInput{\r\n    width: 75%;\r\n}\r\n.addButton{\r\n    border-radius: 50%;\r\n    background-color: orange;\r\n    color: white;\r\n    position: absolute;\r\n    left: 200%;\r\n    top: -9vh;\r\n    height: 87px;\r\n    width: 88px;\r\n}\r\n.buttonIcon{\r\n    font-size: 2rem;\r\n}\r\n.toDoElementCol{\r\n    display: contents;\r\n}\r\n.toDoElement{\r\n    background-color: white;\r\n    border-radius: .25rem;\r\n    height: 7vh;\r\n    border-left: 5px solid orange;\r\n    margin: 0 auto;\r\n    width: 76%;\r\n    margin-top: 5%;\r\n    margin-left: 0%;\r\n    font-family: inherit;\r\n    color: #444;\r\n    line-height: 7vh;\r\n}\r\n.toDoElementText{\r\n    margin:2%;\r\n}\r\n.deleteIcon{\r\n    line-height: 5vh;\r\n    margin: 2%;\r\n    cursor: pointer;\r\n}\r\n.deleteModal{\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\n.confirmButton{\r\n    border-radius: .25rem;\r\n    background-color: orange;\r\n    color: white;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGFyZWFzL3RhcmVhcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZFQUE2RTtJQUM3RTtBQUNKO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLHdCQUF3QjtJQUN4QixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFVBQVU7SUFDVixTQUFTO0lBQ1QsWUFBWTtJQUNaLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSx1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLFdBQVc7SUFDWCw2QkFBNkI7SUFDN0IsY0FBYztJQUNkLFVBQVU7SUFDVixjQUFjO0lBQ2QsZUFBZTtJQUNmLG9CQUFvQjtJQUNwQixXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxTQUFTO0FBQ2I7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0lBQ1YsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksc0hBQXNIO0FBQzFIO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsd0JBQXdCO0lBQ3hCLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC90YXJlYXMvdGFyZWFzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudG9Eb0Jhbm5lcntcclxuICAgIGhlaWdodDogMTAwdmg7XHJcbn1cclxuLnRvRG9UaXRsZXtcclxuICAgIGNvbG9yOiBvcmFuZ2U7XHJcbiAgICBmb250LWZhbWlseTogJ0dpbGwgU2FucycsICdHaWxsIFNhbnMgTVQnLCBDYWxpYnJpLCAnVHJlYnVjaGV0IE1TJywgc2Fucy1zZXJpZjtcclxuICAgIG1hcmdpbi1ib3R0b206IDglXHJcbn1cclxuLmlucHV0Q29se1xyXG4gICAgZGlzcGxheTogY29udGVudHM7XHJcbn1cclxuLnRvRG9JbnB1dHtcclxuICAgIHdpZHRoOiA3NSU7XHJcbn1cclxuLmFkZEJ1dHRvbntcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IG9yYW5nZTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDIwMCU7XHJcbiAgICB0b3A6IC05dmg7XHJcbiAgICBoZWlnaHQ6IDg3cHg7XHJcbiAgICB3aWR0aDogODhweDtcclxufVxyXG4uYnV0dG9uSWNvbntcclxuICAgIGZvbnQtc2l6ZTogMnJlbTtcclxufVxyXG4udG9Eb0VsZW1lbnRDb2x7XHJcbiAgICBkaXNwbGF5OiBjb250ZW50cztcclxufVxyXG4udG9Eb0VsZW1lbnR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IC4yNXJlbTtcclxuICAgIGhlaWdodDogN3ZoO1xyXG4gICAgYm9yZGVyLWxlZnQ6IDVweCBzb2xpZCBvcmFuZ2U7XHJcbiAgICBtYXJnaW46IDAgYXV0bztcclxuICAgIHdpZHRoOiA3NiU7XHJcbiAgICBtYXJnaW4tdG9wOiA1JTtcclxuICAgIG1hcmdpbi1sZWZ0OiAwJTtcclxuICAgIGZvbnQtZmFtaWx5OiBpbmhlcml0O1xyXG4gICAgY29sb3I6ICM0NDQ7XHJcbiAgICBsaW5lLWhlaWdodDogN3ZoO1xyXG59XHJcbi50b0RvRWxlbWVudFRleHR7XHJcbiAgICBtYXJnaW46MiU7XHJcbn1cclxuLmRlbGV0ZUljb257XHJcbiAgICBsaW5lLWhlaWdodDogNXZoO1xyXG4gICAgbWFyZ2luOiAyJTtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG4uZGVsZXRlTW9kYWx7XHJcbiAgICBmb250LWZhbWlseTogJ0x1Y2lkYSBTYW5zJywgJ0x1Y2lkYSBTYW5zIFJlZ3VsYXInLCAnTHVjaWRhIEdyYW5kZScsICdMdWNpZGEgU2FucyBVbmljb2RlJywgR2VuZXZhLCBWZXJkYW5hLCBzYW5zLXNlcmlmO1xyXG59XHJcbi5jb25maXJtQnV0dG9ue1xyXG4gICAgYm9yZGVyLXJhZGl1czogLjI1cmVtO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogb3JhbmdlO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59Il19 */");
             /***/ 
         }),
         /***/ "./src/app/tareas/tareas.component.ts": 
@@ -437,8 +437,27 @@
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             var TareasComponent = /** @class */ (function () {
                 function TareasComponent() {
-                    this.tareas = ["tarea1", "tarea2", "tarea3"];
+                    this.tareas = [];
+                    this.tareaSeleccionada = -1;
+                    var savedToDos = JSON.parse(localStorage.getItem("tasks"));
+                    this.tareas = (savedToDos != null ? savedToDos : []);
                 }
+                TareasComponent.prototype.addTask = function () {
+                    var task = document.querySelector(".toDoInput").value;
+                    if (task != "") {
+                        this.tareas.push(task);
+                    }
+                    if (typeof (Storage) !== 'undefined') {
+                        localStorage.setItem("tasks", JSON.stringify(this.tareas));
+                    }
+                    document.querySelector(".toDoInput").value = "";
+                };
+                TareasComponent.prototype.deleteTask = function () {
+                    this.tareas.splice(this.tareaSeleccionada, 1);
+                    if (typeof (Storage) !== 'undefined') {
+                        localStorage.setItem("tasks", JSON.stringify(this.tareas));
+                    }
+                };
                 TareasComponent.prototype.ngOnInit = function () {
                 };
                 return TareasComponent;
