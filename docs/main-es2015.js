@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container bg-light toDoBanner\">\n    <div class=\"row\">\n        <div class=\"col-12 mb-5\">\n            <h1 class=\"toDoTitle text-center mt-5 mb-5\">To Do App</h1>\n            <div class=\"container\">\n                <div class=\"row mb-5\">\n                    <div class=\"col-10 inputCol\">\n                        <input type=\"text\" class=\"form-control toDoInput\" placeholder=\"Add your To Do\">\n                    </div>\n                    <div class=\"col-4 buttonCol\">\n                        <button (click)=\"addTask()\" type=\"button\" class=\"btn btn addButton\"><i\n                                class=\"fas fa-plus buttonIcon\"></i></button>\n                    </div>\n                </div>\n            </div>\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div *ngFor=\"let tarea of tareas; let i = index\" class=\"col-12 toDoElementCol\">\n                        <div class=\"toDoElement mb-2\">\n                            <span class=\"toDoElementText\">{{tarea}}</span>\n                            <i (click)=\"setTask(i)\" class=\"fas fa-trash float-right deleteIcon\"\n                                data-toggle=\"modal\" data-target=\"#deleteModal\"></i>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"deleteModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\"\n    aria-hidden=\"true\">\n    <div class=\"modal-dialog\" role=\"document\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\">\n                <h5 class=\"modal-title\" id=\"exampleModalLabel\">Delete</h5>\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                    <span aria-hidden=\"true\">&times;</span>\n                </button>\n            </div>\n            <div class=\"modal-body\">\n                <span>Are you sure?</span>\n            </div>\n            <div class=\"modal-footer\">\n                <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n                <button (click)=\"deleteTask()\" type=\"button\" class=\"btn btn confirmButton\"\n                    data-dismiss=\"modal\">Yes</button>\n            </div>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>tareas works!</p>\n");
 
 /***/ }),
 
@@ -371,7 +371,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".toDoBanner{\r\n    height: 100%;\r\n    border-radius: .25rem;\r\n    width: 50%;\r\n    margin-top:5%;\r\n}\r\n.toDoTitle{\r\n    color: orange;\r\n    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n    margin-bottom: 8%;\r\n}\r\n.inputCol{\r\n    margin-left: 5%;\r\n}\r\n.toDoInput{\r\n    width: 90%;\r\n}\r\n.addButton{\r\n    border-radius: 50%;\r\n    background-color: orange;\r\n    color: white;\r\n    position: absolute;\r\n    left: 210%;\r\n    top: -9vh;\r\n    height: 87px;\r\n    width: 88px;\r\n}\r\n.buttonIcon{\r\n    font-size: 2rem;\r\n}\r\n.toDoElementCol{\r\n    margin-left: 5%;\r\n}\r\n.toDoElement{\r\n    background-color: white;\r\n    border-radius: .25rem;\r\n    height: 7vh;\r\n    border-left: 5px solid orange;\r\n    margin: 0 auto;\r\n    width: 72%;\r\n    margin-left: 0%;\r\n    font-family: inherit;\r\n    color: #444;\r\n    line-height: 7vh;\r\n}\r\n.toDoElementText{\r\n    margin:2%;\r\n}\r\n.deleteIcon{\r\n    line-height: 7vh;\r\n    margin-right: 5%;\r\n    cursor: pointer;\r\n}\r\n.deleteModal{\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\n.confirmButton{\r\n    border-radius: .25rem;\r\n    background-color: orange;\r\n    color: white;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGFyZWFzL3RhcmVhcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLHFCQUFxQjtJQUNyQixVQUFVO0lBQ1YsYUFBYTtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZFQUE2RTtJQUM3RSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLHdCQUF3QjtJQUN4QixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFVBQVU7SUFDVixTQUFTO0lBQ1QsWUFBWTtJQUNaLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHFCQUFxQjtJQUNyQixXQUFXO0lBQ1gsNkJBQTZCO0lBQzdCLGNBQWM7SUFDZCxVQUFVO0lBQ1YsZUFBZTtJQUNmLG9CQUFvQjtJQUNwQixXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxTQUFTO0FBQ2I7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksc0hBQXNIO0FBQzFIO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsd0JBQXdCO0lBQ3hCLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC90YXJlYXMvdGFyZWFzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudG9Eb0Jhbm5lcntcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGJvcmRlci1yYWRpdXM6IC4yNXJlbTtcclxuICAgIHdpZHRoOiA1MCU7XHJcbiAgICBtYXJnaW4tdG9wOjUlO1xyXG59XHJcbi50b0RvVGl0bGV7XHJcbiAgICBjb2xvcjogb3JhbmdlO1xyXG4gICAgZm9udC1mYW1pbHk6ICdHaWxsIFNhbnMnLCAnR2lsbCBTYW5zIE1UJywgQ2FsaWJyaSwgJ1RyZWJ1Y2hldCBNUycsIHNhbnMtc2VyaWY7XHJcbiAgICBtYXJnaW4tYm90dG9tOiA4JTtcclxufVxyXG4uaW5wdXRDb2x7XHJcbiAgICBtYXJnaW4tbGVmdDogNSU7XHJcbn1cclxuLnRvRG9JbnB1dHtcclxuICAgIHdpZHRoOiA5MCU7XHJcbn1cclxuLmFkZEJ1dHRvbntcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IG9yYW5nZTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDIxMCU7XHJcbiAgICB0b3A6IC05dmg7XHJcbiAgICBoZWlnaHQ6IDg3cHg7XHJcbiAgICB3aWR0aDogODhweDtcclxufVxyXG4uYnV0dG9uSWNvbntcclxuICAgIGZvbnQtc2l6ZTogMnJlbTtcclxufVxyXG4udG9Eb0VsZW1lbnRDb2x7XHJcbiAgICBtYXJnaW4tbGVmdDogNSU7XHJcbn1cclxuLnRvRG9FbGVtZW50e1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAuMjVyZW07XHJcbiAgICBoZWlnaHQ6IDd2aDtcclxuICAgIGJvcmRlci1sZWZ0OiA1cHggc29saWQgb3JhbmdlO1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICB3aWR0aDogNzIlO1xyXG4gICAgbWFyZ2luLWxlZnQ6IDAlO1xyXG4gICAgZm9udC1mYW1pbHk6IGluaGVyaXQ7XHJcbiAgICBjb2xvcjogIzQ0NDtcclxuICAgIGxpbmUtaGVpZ2h0OiA3dmg7XHJcbn1cclxuLnRvRG9FbGVtZW50VGV4dHtcclxuICAgIG1hcmdpbjoyJTtcclxufVxyXG4uZGVsZXRlSWNvbntcclxuICAgIGxpbmUtaGVpZ2h0OiA3dmg7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDUlO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcbi5kZWxldGVNb2RhbHtcclxuICAgIGZvbnQtZmFtaWx5OiAnTHVjaWRhIFNhbnMnLCAnTHVjaWRhIFNhbnMgUmVndWxhcicsICdMdWNpZGEgR3JhbmRlJywgJ0x1Y2lkYSBTYW5zIFVuaWNvZGUnLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7XHJcbn1cclxuLmNvbmZpcm1CdXR0b257XHJcbiAgICBib3JkZXItcmFkaXVzOiAuMjVyZW07XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2U7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RhcmVhcy90YXJlYXMuY29tcG9uZW50LmNzcyJ9 */");
 
 /***/ }),
 
@@ -391,29 +391,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let TareasComponent = class TareasComponent {
     constructor() {
-        this.tareas = [];
-        this.tareaSeleccionada = -1;
-        let savedToDos = JSON.parse(localStorage.getItem("tasks"));
-        this.tareas = (savedToDos != null ? savedToDos : []);
-    }
-    setTask(index) {
-        this.tareaSeleccionada = index;
-    }
-    addTask() {
-        let task = document.querySelector(".toDoInput").value;
-        if (task != "") {
-            this.tareas.push(task);
-        }
-        if (typeof (Storage) !== 'undefined') {
-            localStorage.setItem("tasks", JSON.stringify(this.tareas));
-        }
-        document.querySelector(".toDoInput").value = "";
-    }
-    deleteTask() {
-        this.tareas.splice(this.tareaSeleccionada, 1);
-        if (typeof (Storage) !== 'undefined') {
-            localStorage.setItem("tasks", JSON.stringify(this.tareas));
-        }
+        this.tareas = ["tarea1", "tarea2", "tarea3"];
     }
     ngOnInit() {
     }
@@ -495,7 +473,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\agnes\Desktop\projectes\toDoList\toDoList\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\agnes\Desktop\projectes\toDoList\src\main.ts */"./src/main.ts");
 
 
 /***/ })
